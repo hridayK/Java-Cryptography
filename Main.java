@@ -4,7 +4,9 @@ import java.util.*;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        String message = sc.nextLine();
+        // System.out.println("Enter the Message ");
+        // String message = sc.nextLine();
+        
         //Testing for Caesar Cipher
         /*Caesar cs = new Caesar();
         int key = (int) (Math.random() * 10000);
@@ -20,6 +22,10 @@ public class Main {
 
         System.out.println("The possible message is:");
         display(possible);*/
+
+        //Testing for Hill Cipher
+        // Hill obj = new Hill();
+        // obj.allstff();
     }
 
     static void display(String arr[]){
