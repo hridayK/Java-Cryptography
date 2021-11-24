@@ -26,6 +26,19 @@ public class Main {
         //Testing for Hill Cipher
         // Hill obj = new Hill();
         // obj.allstff();
+
+        
+        VigenereCipher vc = new VigenereCipher();
+        String key;
+        String message;
+        System.out.println("\n\nEnter the Message to be Encrypted:\t");
+        message = sc.nextLine();
+        System.out.println("\n\nEnter the Encryption Key:\t");
+        key = sc.nextLine();
+        String ensg = vc.en(message, key);
+        System.out.println("\n\nString: " + message);
+        System.out.println("\n\nEncrypted message:\t" + ensg);
+        System.out.println("\n\nDecrypted message:\t" + vc.de(ensg, key));
     }
 
     static void display(String arr[]){
