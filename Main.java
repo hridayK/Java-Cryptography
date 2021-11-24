@@ -24,8 +24,8 @@ public class Main {
         display(possible);*/
 
         //Testing for Hill Cipher
-        // Hill obj = new Hill();
-        // obj.allstff();
+        Hill obj = new Hill();
+        obj.allstff();
     }
 
     static void display(String arr[]){
