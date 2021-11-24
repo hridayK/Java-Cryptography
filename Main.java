@@ -3,9 +3,9 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        //Scanner sc = new Scanner(System.in);
         // System.out.println("Enter the Message ");
-        // String message = sc.nextLine();
+        //String message = sc.nextLine();
         
         //Testing for Caesar Cipher
         /*Caesar cs = new Caesar();
@@ -28,17 +28,17 @@ public class Main {
         // obj.allstff();
 
         
-        VigenereCipher vc = new VigenereCipher();
-        String key;
-        String message;
-        System.out.println("\n\nEnter the Message to be Encrypted:\t");
-        message = sc.nextLine();
-        System.out.println("\n\nEnter the Encryption Key:\t");
-        key = sc.nextLine();
-        String ensg = vc.en(message, key);
-        System.out.println("\n\nString: " + message);
-        System.out.println("\n\nEncrypted message:\t" + ensg);
-        System.out.println("\n\nDecrypted message:\t" + vc.de(ensg, key));
+        // VigenereCipher vc = new VigenereCipher();
+        // String key;
+        // String message;
+        // System.out.println("\n\nEnter the Message to be Encrypted:\t");
+        // message = sc.nextLine();
+        // System.out.println("\n\nEnter the Encryption Key:\t");
+        // key = sc.nextLine();
+        // String ensg = vc.en(message, key);
+        // System.out.println("\n\nString: " + message);
+        // System.out.println("\n\nEncrypted message:\t" + ensg);
+        // System.out.println("\n\nDecrypted message:\t" + vc.de(ensg, key));
     }
 
     static void display(String arr[]){

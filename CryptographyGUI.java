@@ -446,7 +446,7 @@ public class CryptographyGUI extends Frame{
             @Override
             public void actionPerformed(ActionEvent e) {
                 String text = encrypttxt.getText();
-                 key= (int) (Math.random() * 10000);
+                key = (int) (Math.random() * 10000);
                 cmessage = obj2.encrypt(text, key);
                 encryp.setText("Encryptic Text is : " + cmessage);
                 keytxt1.setText(Integer.toString(key));
@@ -479,10 +479,10 @@ public class CryptographyGUI extends Frame{
                 String definalce="";
 
                 for(int i = 0; i < possible.length; i++){
-                    definalce = definalce + possible[i] ;
+                    definalce = definalce + possible[i] + " " ;
                 }
 
-                decryp.setText("Decryptic Text is : " + definalce);
+                decryp.setText("Decryptic Text is : " + dmessage);
             }
         });
         //button work end

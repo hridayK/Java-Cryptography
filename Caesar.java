@@ -7,7 +7,6 @@ class Caesar{
     public String encrypt(String message, int shift){
         String encrypted = "";
         char ch;
-        key=shift;
         for(int i=0;i<message.length();i++){
             ch=message.charAt(i);
             if(Character.isLetter(ch)){
@@ -20,12 +19,13 @@ class Caesar{
                 encrypted+=ch;
             }
         }
+        key=shift;
         return encrypted;
     }
 
-    public String decrypt(String cipher, int key){
-        return encrypt(cipher, 26-key);
-    }
+    public String decrypt(String message, int key){
+        return encrypt(message,26-(key%26));
+    }   
 
     String[] bruteForce(String cipher){
         String results[]=new String[26];
